@@ -11,6 +11,6 @@ import { AppComponent } from './app.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //lists all components which should be known to Angular when it analyzes our index.html file
 })
 export class AppModule { }
