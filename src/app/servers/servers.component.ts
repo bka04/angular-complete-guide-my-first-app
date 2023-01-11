@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+  //selector: '[app-servers]',  can use different selectors - attribute
+  //selector: '.app-servers',   can use different selectors - class
   selector: 'app-servers',
   //templateUrl: './servers.component.html',
   template: `
