@@ -14,6 +14,7 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
   serverName = 'TestServer';
+  username = ''; //assignment 2: databinding
 
   constructor() {
     setTimeout(() => {
