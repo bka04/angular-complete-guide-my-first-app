@@ -1,0 +1,22 @@
+commands
+
+Creating angular app:
+1) cd [path]   e.g. cd C:\Users\brent-a\Documents\Training Repos
+2) ng new app-name --no-strict
+
+Starting an angular app (cd into folder first or use terminal in vs code)
+1) ng serve (can quit with control C)
+
+Using NVM to install/change node versions
+1) nvm install 12.14.1
+2) nvm use 12.14.1
+3) nvm use 18.10.0
+
+After cloning a project to install node_modules:
+1) npm install
+
+Angular commands
+1) ng serve
+2) ng generate component [component name]
+	shortcut:  ng g c [component name]
+
