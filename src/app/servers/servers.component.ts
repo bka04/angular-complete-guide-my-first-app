@@ -14,9 +14,12 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
   serverName = 'TestServer';
-  username = ''; //assignment 2: databinding
   serverCreated = false;
   servers = ['Testserver', 'Testserver 2'];
+
+  // username = ''; //assignment 2: databinding
+  showDetails = false; //assignment 3: databinding
+  displayDetailsArray = []; //assignment 3: databinding
 
   constructor() {
     setTimeout(() => {
@@ -32,5 +35,10 @@ export class ServersComponent {
 
   onUpdateServerName(event: any) {
     this.serverName=event.target.value;
+  }
+
+  onDisplayDetails(event: any) {
+    this.showDetails = !this.showDetails;
+    this.displayDetailsArray.push(Date())
   }
 }

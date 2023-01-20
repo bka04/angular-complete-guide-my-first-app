@@ -25,11 +25,11 @@
 
 
 
-<!-- assignment 2: databinding -->
-<br>
+<!-- Assignment 2: Databinding -->
+<!-- <br>
 <br>
 <hr>
-<h5>Assignment 2: databinding</h5>
+<h5>Assignment 2: Databinding</h5>
 <input
   type="text"
   class="form-control"
@@ -39,4 +39,21 @@
   class="btn btn-primary"
   [disabled]="username === ''"
   (click)="username = ''"
-  >Reset username</button>
+  >Reset username</button> -->
+
+<!-- Assignment 3: Directives -->
+<br>
+<br>
+<hr>
+<h5>Assignment 3: Directives</h5>
+<button
+  class="btn btn-primary"
+  (click)="onDisplayDetails($event)"
+>Display Details</button>
+<p *ngIf="showDetails">Detailing so many detailed details</p>
+<hr>
+<p *ngFor="let timestamp of displayDetailsArray; let i = index"
+  [ngStyle]="(i >= 4) && {backgroundColor: 'blue'}"
+  [ngClass]="{'white-text': i >= 4}"
+>{{ timestamp }} - {{i}}</p>
+<!-- Alternative: [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" -->
